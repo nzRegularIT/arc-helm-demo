@@ -22,5 +22,6 @@ spec:
   type: ClusterIP
   ports:
   - port: 80
+    nodePort:
   selector:
     app: {{.Release.Name}}-vote-front
