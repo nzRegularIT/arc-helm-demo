@@ -19,7 +19,7 @@ metadata:
   labels:
     name: {{.Release.Name}}-vote-front
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - port: 80
   selector:
